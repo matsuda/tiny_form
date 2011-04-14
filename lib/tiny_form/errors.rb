@@ -1,5 +1,5 @@
 module TinyForm
-  # Generic Active Record exception class.
+  # Generic TinyForm exception class.
   class TinyFormError < StandardError
   end
 
