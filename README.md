@@ -5,20 +5,6 @@ Fooモデルクラス(app/models/foo.rb)の場合はFooFormクラス(app/forms/f
 
 ## generator
 
-* tiny_form:setup
-
-config.autoload_pathsにapp/formsを追加する
-
-    rails g tiny_form:setup
-
-    module Tiny
-      class Application < Rails::Application
-        config.autoload_paths += %W(#{config.root}/app/forms)
-      end
-    end
-
-* tiny_form
-
 TinyFormのスケルトンファイルを作成
 
     $ rails g tiny_form Foo
