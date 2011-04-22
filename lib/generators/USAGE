@@ -1,10 +1,10 @@
 Description:
-    This generator generate a skeleton file for custom to app/forms directory.
+    This generator generate a skeleton file to build a search form class for a target model class to app/forms directory.
+    ex.) in case of User (app/models/user.rb) model class, generate UserForm (app/forms/user_form.rb)
 
 Example:
-    rails generate tiny_form Foo
+    rails generate tiny_form User
 
     This will create:
-        app/forms/foo_form.rb
-    This also create:
-        spec/models/foo_spec.rb
+        app/forms/user_form.rb
+        test/unit/user_form_test.rb

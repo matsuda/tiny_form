@@ -7,7 +7,7 @@ class TinyFormGenerator < Rails::Generators::NamedBase
     template 'form.rb', File.join('app/forms', class_path, "#{file_name}_form.rb")
   end
 
-  hook_for :test_framework, :as => :model do |test_framework|
-    invoke test_framework, [class_name], :fixture => false
+  hook_for :test_framework, :as => :model do |instance, test_framework|
+    instance.invoke test_framework, ["#{instance.name}Form"], :fixture => false
   end
 end

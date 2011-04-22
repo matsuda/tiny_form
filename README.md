@@ -9,8 +9,8 @@ TinyFormのスケルトンファイルを作成
 
     $ rails g tiny_form Foo
           create  app/forms/foo_form.rb
-          invoke  rspec
-          create    spec/models/foo_spec.rb
+          invoke  test_unit
+          create    test/unit/user_form_test.rb
 
 ## attributeの指定
 
